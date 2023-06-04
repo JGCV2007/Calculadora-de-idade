@@ -13,15 +13,15 @@
         <form action="">
             <label for="iyear">YEAR</label>
             <input type="text" name="year" id="iyear" min="1900" max="2023"
-            autocomplete="bday-year" oninput="calyear()">
+            autocomplete="bday-year"  oninput="calyear()" required>
 
             <label for="imonth">MONTH</label>
             <input type="text" name="month" id="imonth" min="1" max="12"
-            autocomplete="bday-month" oninput="calmon()">
+            autocomplete="bday-month" oninput="calmon()" required>
 
             <label for="iday">D A Y</label>
             <input type="text" name="day" id="iday" min="1" max="31"
-            autocomplete="bday-day" oninput="calday()">
+            autocomplete="bday-day" oninput="calday()" required>
 
             <input type="submit" value="enviar">
 
