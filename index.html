@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="calculator/assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/mobilefisrt.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <label for="iyear">YEAR</label>
+            <input type="text" name="year" id="iyear" min="1900" max="2023"
+            autocomplete="bday-year" oninput="calyear()">
+
+            <label for="imonth">MONTH</label>
+            <input type="text" name="month" id="imonth" min="1" max="12"
+            autocomplete="bday-month" oninput="calmon()">
+
+            <label for="iday">D A Y</label>
+            <input type="text" name="day" id="iday" min="1" max="31"
+            autocomplete="bday-day" oninput="calday()">
+
+            <input type="submit" value="enviar">
+
+            <p>
+             <output id="iano">--</output>   
+             Years
+            </p>
+            <p><output id="imes">--</output> 
+                months
+            </p>
+            <p><output id="idia">--</output> 
+                days
+            </p>
+        </form>
+    </main>
+    <script>
+        function calyear(){
+            var atual = new Date().getFullYear()
+            iano.innerHTML = Number(atual) - Number(iyear.value)
+        }
+        function calmon(){
+            var atual = new Date().getMonth()
+            imes.innerHTML = Number(atual) - Number(imonth.value)
+        }
+        function calday(){
+            var atual = new Date().getDay()
+            idia.innerHTML = Number(atual) - Number(iday.value)
+        }
+    </script>
+</body>
+</html>
