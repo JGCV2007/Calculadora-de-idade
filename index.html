@@ -6,24 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="calculator/assets/images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos/mobilefisrt.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family
+    =Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Calculator</title>
 </head>
 <body>
     <main>
         <form action="">
-            <label for="iyear">YEAR</label>
-            <input type="text" name="year" id="iyear" min="1900" max="2023"
-            autocomplete="bday-year"  oninput="calyear()" required>
+            <label for="iyear" class="name">YEAR</label>
+            <input type="text" name="year" class="box" id="iyear" min="1900" max="2023"
+            autocomplete="bday-year"  oninput="calyear()" required placeholder="YY">
 
-            <label for="imonth">MONTH</label>
-            <input type="text" name="month" id="imonth" min="1" max="12"
-            autocomplete="bday-month" oninput="calmon()" required>
+            <label for="imonth" class="name">MONTH</label>
+            <input type="text" name="month" class="box" id="imonth" min="1" max="12"
+            autocomplete="bday-month" oninput="calmon()" required placeholder="MM">
 
-            <label for="iday">D A Y</label>
-            <input type="text" name="day" id="iday" min="1" max="31"
-            autocomplete="bday-day" oninput="calday()" required>
+            <label for="iday" class="name">DAY</label>
+            <input type="text" name="day" class="box" id="iday" min="1" max="31"
+            autocomplete="bday-day" oninput="calday()" required placeholder="DD">
 
-            <input type="submit" value="enviar">
+            <input type="submit" value="img/icon-arrow.svg" onclick="submit()">
 
             <p>
              <output id="iano">--</output>   
@@ -39,16 +41,17 @@
     </main>
     <script>
         function calyear(){
-            var atual = new Date().getFullYear()
-            iano.innerHTML = Number(atual) - Number(iyear.value)
+            var ano = new Date().getFullYear()
+            iano.innerHTML = Number(ano) - Number(iyear.value)
+            //if(mes<imonth){iano-1}  
         }
         function calmon(){
-            var atual = new Date().getMonth()
-            imes.innerHTML = Number(atual) - Number(imonth.value)
+            var mes = new Date().getMonth()
+            imes.innerHTML = Number(mes) + Number(imonth.value)
         }
         function calday(){
-            var atual = new Date().getDay()
-            idia.innerHTML = Number(atual) - Number(iday.value)
+            var dia = new Date().getDay()
+            idia.innerHTML = Number(dia) + Number(iday.value)
         }
     </script>
 </body>
