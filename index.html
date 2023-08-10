@@ -16,29 +16,29 @@
                 <form action="">
                     <div class="entrada">
                         <label for="iyear" class="name">YEAR</label>
-                        <input type="text" name="year" class="box" id="iyear"  oninput="calyear()" min="1900" max="2023"
-                        autocomplete="bday-year"   required placeholder="YY">
-                        <span class="wrong">Must be a valid year</span>
+                        <input type="text" name="year" class="box" id="iyear"   min="1900" max="2023"
+                        autocomplete="on" required placeholder="YY" oninput="calyear()">
+                        <span class="wrong" id="wrong.year">Must be a valid year</span>
                         <p class="error" id="error.year">This field is required</p>
                     </div>
                     <div class="entrada">
                         <label for="imonth" class="name">MONTH</label>
-                        <input type="text" name="month" class="box" id="imonth" oninput="calmon()" min="1" max="12"
-                        autocomplete="bday-month"  required placeholder="MM">
-                        <span class="wrong">Must be a valid month</span>
+                        <input type="text" name="month" class="box" id="imonth"  min="1" max="12"
+                        autocomplete="on" required placeholder="MM" oninput="calmon()">
+                        <span class="wrong" id="wrong.month">Must be a valid month</span>
                         <p class="error" id="error.month">This field is required</p>
                     </div>
                     <div class="entrada">
                         <label for="iday" class="name">DAY</label>
-                        <input type="text" name="day" class="box" id="iday" oninput="calday()" min="1" max="31"
-                        autocomplete="bday-day"  required placeholder="DD">
-                        <span class="wrong">Must be a valid day</span>
+                        <input type="text" name="day" class="box" id="iday"  min="1" max="31"
+                        autocomplete="on" required placeholder="DD" oninput="calday()">
+                        <span class="wrong" id="wrong.day">Must be a valid day</span>
                         <p class="error" id="error.day">This field is required</p>
                     </div>
                 </form>
 
-         <button type="submit" class="button" onclick="submit()">
-            <img src="img/icon-arrow.svg" alt="icon"></button>
+                <button type="submit" class="button" onclick="submit()">
+                <img src="img/icon-arrow.svg" alt="icon"></button>
 
             </div>
             
