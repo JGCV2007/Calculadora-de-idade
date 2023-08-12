@@ -1,7 +1,7 @@
 const button = document.querySelector('button')
-const inpunt_day = document.querySelector('iday');
-const inpunt_month = document.querySelector('imonth');
-const inpunt_year = document.querySelector('iyear');
+const input_day = document.querySelector('iday');
+const input_month = document.querySelector('imonth');
+const input_year = document.querySelector('iyear');
 const error_day = document.querySelector('error.day')
 const wrong_day = document.querySelector('wrong.day')
 const error_month = document.querySelector('error.month')
@@ -14,36 +14,30 @@ const Month_atual = today.getMonth();
 const year_atual = today.getFullYear();
 
 function calyear(){
-    if (inpunt_year == " ") {
+    if (input_year === "") {
      error_year.style.display = "block"
     }
-    else if (inpunt_year <0 || inpunt_year > year_atual) {
+    else if (input_year <0 || input_year > year_atual) {
     wrong_year.style.display = "block"
     }
 }
 function calmon(){
-    if (inpunt_month == " ") {
+    if (input_month === "") {
     error_month.style.display = "block"
     }
-    else if (inpunt_month <1 || inpunt_month >12) {
+    else if (input_month <1 || input_month >12) {
      wrong_month.style.display = "block"
     }
 }
 function calday(){
-    if (inpunt_day == " "){
+    if (input_day === ""){
      error_day.style.display = "block"
     }
-    else if (inpunt_day <1 || inpunt_day >31) {
+    else if (input_day <1 || input_day >31) {
     wrong_day.style.display = "block"
 }
 }
-function submit() {
-    if(day_atual && Month_atual < inpunt_day && inpunt_month){
 
-    }
- year_atual - inpunt_year
-   
-}
 
  // selecionar output e terminar calculos
 
