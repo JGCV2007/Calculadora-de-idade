@@ -51,10 +51,6 @@ p{font-size: 50px;
     display: none; 
 }
 
-form{
-    display:flex;
-    flex-direction: row; 
-}
 
 #box1{
     display: flex; 
