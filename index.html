@@ -16,29 +16,31 @@
             <div id="box1">
                 
                     <div class="entrada">
-                        <label for="iyear" class="name">YEAR</label>
+                        <label for="iyear" class="name">YEAR</label><br>
                         <input type="text" name="year" class="box" id="iyear"   min="1900" max="2023"
-                        autocomplete="on" required placeholder="YY" oninput="calyear()">
+                        autocomplete="on" required >
                         <span class="wrong" id="wrong.year">Must be a valid year</span>
                         <p class="error" id="error.year">This field is required</p>
                     </div>
+
                     <div class="entrada">
-                        <label for="imonth" class="name">MONTH</label>
+                        <label for="imonth" class="name">MONTH</label><br>
                         <input type="text" name="month" class="box" id="imonth"  min="1" max="12"
-                        autocomplete="on" required placeholder="MM" oninput="calmon()">
+                        autocomplete="on" required >
                         <span class="wrong" id="wrong.month">Must be a valid month</span>
                         <p class="error" id="error.month">This field is required</p>
                     </div>
+
                     <div class="entrada">
-                        <label for="iday" class="name">DAY</label>
+                        <label for="iday" class="name">DAY</label><br>
                         <input type="text" name="day" class="box" id="iday"  min="1" max="31"
-                        autocomplete="on" required placeholder="DD" oninput="calday()">
+                        autocomplete="on" required >
                         <span class="wrong" id="wrong.day">Must be a valid day</span>
                         <p class="error" id="error.day">This field is required</p>
                     </div>
                 
 
-                <button type="submit" class="button" onclick="submit()">
+                <button type="submit" class="button">
                 <img src="img/icon-arrow.svg" alt="icon"></button>
 
             </div>

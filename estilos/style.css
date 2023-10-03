@@ -13,32 +13,29 @@ main{
 }
 
 #caixagrande{
-width:70%;
-height:70%;
-margin:auto;
+    width:70%;
+    height:70%;
+    margin:auto;
 
 }
 
 .name{
     color: rgba(128, 128, 128, 0.58);
-    font-size:14px;
+    font-size:18px;
     margin:0px 10px;
 }
 
 .box{
-    margin-top:15px;
-    width:80px;
-    height:40px;
-    border: none;
+    width:100px;
+    height:50px;
     color: rgba(128, 128, 128, 0.58);
-    font-size: 16px;
+    font-size: 25px;
 }
-.box:hover{
-    border:2px hsl(259, 98%, 60%) ;
+.entrada{ 
+   margin:15px;
 }
 
-p{font-size: 50px;
-}
+p{font-size: 50px;}
 
 .error{
     font-size:10px;
@@ -54,11 +51,12 @@ p{font-size: 50px;
 
 #box1{
     display: flex; 
-   
+    margin: auto;
 }
 
 #box2{
     display: flex;
+    margin: auto;
     flex-direction: column;   
     justify-content: center;
 }
